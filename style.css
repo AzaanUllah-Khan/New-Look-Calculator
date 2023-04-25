@@ -1,0 +1,136 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-image: linear-gradient(to left bottom, #c9c22f, #bfc840, #b5ce50, #acd360, #a3d870, #8ddb84, #78de98, #63dfac, #39ddc9, #17d9e1, #34d4f2, #5fccfb);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh
+}
+
+.calculator {
+    width: 25%;
+    background-color: rgba(249, 249, 249, 0.2);
+    padding: 15px 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input {
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input input {
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    height: 50px;
+    font-size: 30px;
+    color: white;
+    font-weight: bolder;
+    padding: 10px 35px;
+    text-align: right;
+}
+
+.btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.row1,
+.row2,
+.row3,
+.row4,
+.row5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.btn input {
+    width: 20%;
+    border-radius: 50%;
+    padding: 20px;
+    text-align: center;
+    margin-right: 10px;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.row1 input:not(:last-child) {
+    background-color: #ffffff;
+    color: black;
+}
+
+.btn .last {
+    background-color: orange;
+    color: white;
+}
+
+.btn input:hover {
+    background-color: #e9e9e945;
+}
+
+.btn .last:hover {
+    background-color: rgb(233, 151, 0);
+}
+
+.row1 input:not(:last-child):hover {
+    background-color: #ccc;
+    color: black;
+}
+
+@media screen and (max-width: 950px) {
+    .calculator {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .calculator {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .calculator {
+        width: 75%;
+        height: 75vh;
+    }
+}
+
+.calculator .name {
+    color: red;
+    font-size: 10px;
+    text-align: right;
+    width: 100%;
+    padding-right: 50px;
+}
+
+.named {
+    color: beige;
+}

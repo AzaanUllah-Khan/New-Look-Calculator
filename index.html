@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn2.iconfinder.com/data/icons/ios7-inspired-mac-icon-set/512/Calculator_512.png">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <form>
+            <div class="input">
+                <input type="text" readonly name="display" id="dis">
+            </div>
+            <div class="btn">
+                <div class="row1">
+                    <input type="button" value="AC" onclick="display.value = ''">
+                    <input type="button" value="%" onclick="percentage()">
+                    <input type="button" value="C"
+                        onclick="display.value = display.value = display.value.toString().slice(0,-1)">
+                    <input type="button" value="/" onclick="display.value += '/'" class="last">
+                </div>
+                <div class="row2">
+                    <input type="button" value="7" onclick="display.value += '7'">
+                    <input type="button" value="8" onclick="display.value += '8'">
+                    <input type="button" value="9" onclick="display.value += '9'">
+                    <input type="button" value="x" onclick="display.value += '*'" class="last">
+                </div>
+                <div class="row3">
+                    <input type="button" value="4" onclick="display.value += '4'">
+                    <input type="button" value="5" onclick="display.value += '5'">
+                    <input type="button" value="6" onclick="display.value += '6'">
+                    <input type="button" value="-" onclick="display.value += '-'" class="last">
+                </div>
+                <div class="row4">
+                    <input type="button" value="1" onclick="display.value += '1'">
+                    <input type="button" value="2" onclick="display.value += '2'">
+                    <input type="button" value="3" onclick="display.value += '3'">
+                    <input type="button" value="+" onclick="display.value += '+'" class="last">
+                </div>
+                <div class="row5">
+                    <input type="button" value="00" onclick="display.value += '00'">
+                    <input type="button" value="0" onclick="display.value += '0'">
+                    <input type="button" value="." onclick="display.value += '.'">
+                    <input type="button" value="=" onclick="display.value = eval(display.value)" class="last">
+                </div>
+            </div>
+        </form>
+        <div class="name">
+            <p>Made By <span class="named">@azaanullahkhan</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
